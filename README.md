@@ -33,7 +33,7 @@ Buscar as tabelas:
 >psql -h localhost -U postgres_user_city cities <br>
 
 Cria extensão:
->CREATE EXTENSION cube; 
+>CREATE EXTENSION cube; <br>
 >CREATE EXTENSION earthdistance;
 
 * [Postgres Earth distance](https://www.postgresql.org/docs/current/earthdistance.html)
