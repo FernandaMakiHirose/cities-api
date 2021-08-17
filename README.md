@@ -20,8 +20,8 @@ docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city 
 ```
 
 ### Populate
-
-* [data](https://github.com/chinnonsantos/sql-paises-estados-cidades/tree/master/PostgreSQL)
+- Faz a conexão das tabelas com o projeto
+- [Link das tabelas usadas](https://github.com/chinnonsantos/sql-paises-estados-cidades/tree/master/PostgreSQL)
 
 ```shell script
 cd ~/workspace/sql-paises-estados-cidades/PostgreSQL
@@ -113,4 +113,5 @@ wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/res
 ```
 
 ## Entendendo o código
-`build.gradle`: Apresenta o build do projeto, é o local onde fica os plugins, as dependências, etc.
+`build.gradle`: Build do projeto, é o local onde fica os plugins, as dependências, etc.
+`application.properties`: Configuração dos databases.
