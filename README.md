@@ -70,12 +70,11 @@ select earth_distance(
 ## Spring Boot
 
 - [https://start.spring.io/](https://start.spring.io/)
-- Java 8
+- Java 8 (no momento o Heroku só aceita projeto com o Java 8)
 - Gradle Project
+- Spring Boot 2.2.7 
 - Jar
-- Spring Web
-- Spring Data JPA
-- PostgreSQL Driver
+- Dependências: Spring Web, Spring Data JPA, PostgreSQL Driver
 
 ### Spring Data
 
@@ -112,3 +111,6 @@ select earth_distance(
 ```shell script
 wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml
 ```
+
+## Entendendo o código
+`build.gradle`: Apresenta o build do projeto, é o local onde fica os plugins, as dependências, etc.
