@@ -23,18 +23,18 @@ docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city 
 - [Link das tabelas usadas](https://github.com/chinnonsantos/sql-paises-estados-cidades/tree/master/PostgreSQL)
 
 Conexão das tabelas com o projeto:
-``cd ~/workspace/sql-paises-estados-cidades/PostgreSQL <br>
-docker run -it --rm --net=host -v $PWD:/tmp postgres /bin/bash <br>``
+```cd ~/workspace/sql-paises-estados-cidades/PostgreSQL <br>
+docker run -it --rm --net=host -v $PWD:/tmp postgres /bin/bash <br>```
 
 Buscar as tabelas:
-``>psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql <br>
->psql -h localhost -U postgres_user_city cities -f /tmp/estado.sql <br>
->psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql <br>
->psql -h localhost -U postgres_user_city cities <br>``
+```psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql <br>
+psql -h localhost -U postgres_user_city cities -f /tmp/estado.sql <br>
+psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql <br>
+psql -h localhost -U postgres_user_city cities <br>```
 
 Cria extensão:
-``>CREATE EXTENSION cube; 
->CREATE EXTENSION earthdistance;``
+```CREATE EXTENSION cube; 
+CREATE EXTENSION earthdistance;```
 
 * [Postgres Earth distance](https://www.postgresql.org/docs/current/earthdistance.html)
 * [earthdistance--1.0--1.1.sql](https://github.com/postgres/postgres/blob/master/contrib/earthdistance/earthdistance--1.0--1.1.sql)
