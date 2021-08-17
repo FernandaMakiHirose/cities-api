@@ -23,14 +23,14 @@ docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city 
 - [Link das tabelas usadas](https://github.com/chinnonsantos/sql-paises-estados-cidades/tree/master/PostgreSQL)
 
 Conexão das tabelas com o projeto:
->cd ~/workspace/sql-paises-estados-cidades/PostgreSQL
->docker run -it --rm --net=host -v $PWD:/tmp postgres /bin/bash
+>cd ~/workspace/sql-paises-estados-cidades/PostgreSQL <br>
+>docker run -it --rm --net=host -v $PWD:/tmp postgres /bin/bash <br>
 
 Buscar as tabelas:
->psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql
->psql -h localhost -U postgres_user_city cities -f /tmp/estado.sql
->psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql
->psql -h localhost -U postgres_user_city cities
+>psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql <br>
+>psql -h localhost -U postgres_user_city cities -f /tmp/estado.sql <br>
+>psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql <br>
+>psql -h localhost -U postgres_user_city cities <br>
 
 Cria extensão:
 >CREATE EXTENSION cube; 
