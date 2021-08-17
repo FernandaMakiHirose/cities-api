@@ -1,5 +1,5 @@
 # Cities Api
-Neste o desafio FOI desenvolver uma API Rest de consulta de cidades do Brasil com dados comparativos. Naveguei pelas boas práticas de Java e do Spring, o banco de dados Postgresql e criei um serviço para o cálculo de distância entre cidades.
+O desafio foi desenvolver uma API Rest de consulta de cidades do Brasil com dados comparativos. Naveguei pelas boas práticas de Java e do Spring, o banco de dados Postgresql e criei um serviço para o cálculo de distância entre cidades.
 
 ## Pré-requisitos
 - Linux
