@@ -33,7 +33,7 @@ Buscar as tabelas:
 >psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql <br>
 >psql -h localhost -U postgres_user_city cities <br>
 
-Cria extensão:
+Cria extensões para fazer query:
 >CREATE EXTENSION cube; <br>
 >CREATE EXTENSION earthdistance;
 
@@ -118,6 +118,12 @@ wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/res
 `Country.java`: a entidade mapeia os países do banco de dados. <br>
 `CountryRepository.java`: é o repository dos países. <br>
 `StatesResource.java`: faz os métodos get dos estados. <br>
-`State.java`: a entidade que mapeia os estados do banco de dados. <br>
+`State.java`: a entidade que mapeia os estados do banco de dados, transforma o Json em Integer. <br>
 `StateRepository.java`: é o repository dos estados. <br>
 `implementation 'com.vladmihalcea:hibernate-types-52:2.9.8'`: dependência adicionada no build.gradle para o Hibernate conseguir transformar o Json em Integer, porque o ddd dos estados estão em json. <br>
+`PointType.java`: é uma classe que transforma o PointType em point do Spring. <br>
+`DistanceResource.java`: faz os métodos da distância. <br>
+`DistanceService.java`: esse serviço pega as requisições no controller, executar os processos no banco de dados e devolver o controller, com isso faz toda a regra de negócios para o cálculo da distância. O primeiro método calcula a distância por milhas e o segundo método que calcula a distância em cubes usando métros. <br>
+`City.java`: a entidade mapeia as cidades dos países. <br>
+`CityResource.java`: faz os métodos get das cidades. <br>
+`CityRepository.java`: faz as querys do cálculo de distância por points e por cube. <br>
