@@ -112,5 +112,12 @@ wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/res
 ```
 
 ## Entendendo o código
-`build.gradle`: Build do projeto, é o local onde fica os plugins, as dependências, etc.
-`application.properties`: Configuração dos databases.
+`build.gradle`: build do projeto, é o local onde fica os plugins, as dependências, etc. <br>
+`application.properties`: configuração dos databases.
+`CountryResource.java`: faz os métodos get dos países.
+`Country.java`: a entidade mapeia os países do banco de dados.
+`CountryRepository.java`: é o repository dos países.
+`StatesResource.java`: faz os métodos get dos estados.
+`State.java`: a entidade que mapeia os estados do banco de dados.
+`StateRepository.java`: é o repository dos estados.
+`implementation 'com.vladmihalcea:hibernate-types-52:2.9.8'`: dependência adicionada no build.gradle para o Hibernate conseguir transformar o Json em Integer, porque o ddd dos estados estão em json.
