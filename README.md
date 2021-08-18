@@ -20,10 +20,12 @@ docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city 
 ```
 
 ### Populate
-- [Link das tabelas usadas](https://github.com/chinnonsantos/sql-paises-estados-cidades/tree/master/PostgreSQL)
+- [Faça o clone das tabelas](https://github.com/chinnonsantos/sql-paises-estados-cidades/tree/master/PostgreSQL)
 
-Conexão das tabelas com o projeto:
+Entre na pasta do repositório clonado:
 >cd ~/workspace/sql-paises-estados-cidades/PostgreSQL <br>
+
+Execute esse comando:
 >docker run -it --rm --net=host -v $PWD:/tmp postgres /bin/bash <br>
 
 Buscar as tabelas:
