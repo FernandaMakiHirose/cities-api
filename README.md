@@ -9,12 +9,9 @@ O desafio foi desenvolver uma API Rest de consulta de cidades do Brasil com dado
 - IntelliJ Community
 - Heroku CLI
 
-## Tutorial usando o Linux
 ## DataBase
 
 ### Postgres
-
-- [Tutorial de instalação do Docker no Ubuntu](https://www.hostinger.com.br/tutoriais/install-docker-ubuntu)
 - [Postgres Docker Hub](https://hub.docker.com/_/postgres)
 
 ```shell script
