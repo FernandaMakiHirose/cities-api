@@ -43,7 +43,7 @@ Cria extensões para fazer query:
 * [postgrescheatsheet](https://postgrescheatsheet.com/#/tables)
 * [datatype-geometric](https://www.postgresql.org/docs/current/datatype-geometric.html)
 
-### Access
+### Acesso
 
 ```shell script
 docker exec -it cities-db /bin/bash
