@@ -1,7 +1,7 @@
 # Cities Api
 O desafio foi desenvolver uma API Rest de consulta de cidades do Brasil com dados comparativos. Naveguei pelas boas práticas de Java e do Spring, o banco de dados Postgresql e criei um serviço para o cálculo de distância entre cidades.
 
-## Pré-requisitos
+## Requisitos
 - Linux
 - Git
 - Java 8
@@ -127,8 +127,3 @@ wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/res
 `City.java`: a entidade mapeia as cidades dos países. <br>
 `CityResource.java`: faz os métodos get das cidades. <br>
 `CityRepository.java`: faz as querys do cálculo de distância por points e por cube. <br>
-
-## Sobre a Autora
-Oi, eu sou a Fernanda! Estou aqui para contribuir com meu conhecimento e espero poder ajudar no desenvolvimento profissional de cada um de vocês.
-
-[![Linkedin Badge](https://img.shields.io/badge/-Fernanda_Maki_Hirose-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fernanda-maki-hirose-801117208/)](https://www.linkedin.com/in/fernanda-maki-hirose-801117208/)  [![Gmail Badge](https://img.shields.io/badge/-femahi2020@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:femahi2020@gmail.com)](mailto:femahi2020@gmail.com)
