@@ -9,6 +9,9 @@ O desafio foi desenvolver uma API Rest de consulta de cidades do Brasil com dado
 - IntelliJ Community
 - Heroku CLI
 
+## Licença
+Distribuido sob a licença MIT License. Veja `LICENSE` para mais informações.
+
 ## DataBase
 
 ### Postgres
